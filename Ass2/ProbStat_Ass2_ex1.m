@@ -1,12 +1,12 @@
 red = cat(3, rand(10,20), zeros(10,20), zeros(10,20));
 imagesc(red);
 
-blue = cat(3, zeros(10,20), zeros(10,20), rand(10,20));
-imagesc(blue);
+%blue = cat(3, zeros(10,20), zeros(10,20), rand(10,20));
+%imagesc(blue);
 
-same = rand(10,20);
-yellow = cat(3, same, same, zeros(10,20));
-imagesc(yellow);
+%same = rand(10,20);
+%yellow = cat(3, same, same, zeros(10,20));
+%imagesc(yellow);
 
 %{ 
 there are 3 values for each tile. 

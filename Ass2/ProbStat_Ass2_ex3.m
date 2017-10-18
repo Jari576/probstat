@@ -1,11 +1,16 @@
 picture = double(imread('players.jpeg'))/255;
+zerosPic = picture(:,:,1)*0;
 
 
 %Use red exclusively(?)
-imagesc(picture(:,:,1));
+%imageRed = cat(3, picture(:,:,1), zerosPic, zerosPic);
+%imagesc(imageRed);
 
 %Use green exclusively(?)
-%imagesc(picture(:,:,2));
+imageGreen = cat(3, zerosPic, picture(:,:,2), zerosPic);
+imagesc(imageGreen);
 
 %Use blue exclusively(?)
-%imagesc(picture(:,:,3));
+% Blue got too monochrome and dark, without players going light
+%imageBlue = cat(3, zerosPic, zerosPic, picture(:,:,3));
+%imagesc(imageBlue);
