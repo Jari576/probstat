@@ -2,6 +2,7 @@ function toRet = blueSegment(toSegment)
     Red = toSegment(:,:,1);
     Green = toSegment(:,:,1);
     Blue = toSegment(:,:,2);
+    toRet = zeros(size(Red,1), size(Red,2));
     for i = 1:size(Red, 1)
         for j = 1:size(Red, 2)
             Rc = Red(i,j);
