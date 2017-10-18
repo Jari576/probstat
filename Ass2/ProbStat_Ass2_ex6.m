@@ -7,3 +7,6 @@ partPlay = pictureBlue(60:90,50:70);
 partBack = pictureBlue(140:160,140:160);
 
 imagesc(partPlay);
+
+hist(partPlay(:));
+%hist(partBack(:));
