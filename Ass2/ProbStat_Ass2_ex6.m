@@ -8,5 +8,5 @@ partBack = pictureBlue(1:176,115:135);
 
 imagesc(partBack);
 
-%hist(partPlay(:));
+hist(partPlay(:));
 %hist(partBack(:));
