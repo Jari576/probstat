@@ -2,11 +2,12 @@ picture = double(imread('players.jpeg'))/255;
 
 pictureBlue = blueSegment(picture);
 
-partPlay = pictureBlue(60:90,50:70);
+partPlay = pictureBlue(50:90, 40:70);
 
-partBack = pictureBlue(140:160,140:160);
+partBack = pictureBlue(1:176, 115:135);
 
 imagesc(partPlay);
 
-hist(partPlay(:));
-%hist(partBack(:));
+%hist(partPlay(:));
+hist(partBack(:));
+
