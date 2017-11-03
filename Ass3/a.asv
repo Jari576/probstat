@@ -7,4 +7,9 @@ meme = mean(performance);
 medaian = median(performance);
 mehd = mad(performance);
 
-ksdensity(measurements(:,6));
+boxplot(performance);
+
+for k=1:6
+  hist = hist(measurements(:,k))
+  saveas(hist,sprintf('hist_%d.jpg',k))
+end
