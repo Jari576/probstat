@@ -7,5 +7,6 @@ meme = mean(performance);
 medaian = median(performance);
 mehd = mad(performance);
 
-boxplot(performance);
+medians = bootstrp(10000, @median, performance);
 
+hist(medians)
