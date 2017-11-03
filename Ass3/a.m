@@ -7,4 +7,4 @@ meen = mean(performance);
 medaian = median(performance);
 mehd = mad(performance);
 
-boxplot(measurements(:,6));
+boxplot(performance);
