@@ -9,7 +9,7 @@ X = zeros(times, 1);
 for row = 1:times
     curr = 1;
     total = 0;
-    while (total < 16)
+    while (total < limit)
         R = poissrnd(lambda);
         
         total = total + R;
@@ -25,10 +25,6 @@ for row = 1:times
     X(answers(row, (1:si)) > 0) = row;
     plotter(row, (1:si)) = X;
 end
-
-xgrid = linspace(0,times);
-ygrid = linspace(0,si);
-[hor,ver] = meshgrid(xgrid, ygrid);
 
 for row = 1:times
     plot(plotter(row, (1:si)), '*b');
