@@ -1,4 +1,0 @@
-chance = zeros(3651,1);
-for i = 1:3651
-   chance(i) = (R(i,2)*R(i+1,2))/R(i,2);
-end
