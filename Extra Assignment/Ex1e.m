@@ -1,7 +1,4 @@
-freq = Pcount(2, 10, 15, 10000);
-disp(freq);
-
-function freq = Pcount(mu,a,b,N)
+function freq = Ex1e(mu,a,b,N)
 lambda = 1/mu;
 answers = zeros(N, 1);
 results = zeros(N, 1);
