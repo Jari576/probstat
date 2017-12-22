@@ -5,7 +5,6 @@ answers = zeros(times, 1);
 plotter = zeros(times, 1);
 X = zeros(times, 1);
 
-
 for row = 1:times
     curr = 1;
     total = 0;

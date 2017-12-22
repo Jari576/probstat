@@ -23,3 +23,4 @@ total = sum(prob)/times;
 confidenceDiff = Z001 * sqrt(total*(1-total)/amount);
 confplus = total + confidenceDiff;
 confmin = total - confidenceDiff;
+calcAmountForLow = total*(1-total)/(0.0005/2.576).^2;
